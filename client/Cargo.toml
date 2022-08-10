@@ -1,0 +1,21 @@
+[package]
+name = "fast-mic"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+cpal = "0.13.4"
+anyhow = "1.0.45"
+ringbuf = "0.2.6"
+egui = "0.18"
+eframe = { version = "0.18", features = ["persistence"] }
+bus = "2.2.3"
+winres = "0.1.12"
+lazy_static = "1.4.0"
+image = "0.23.14"
+
+[target.'cfg(windows)'.build-dependencies]
+winres = "0.1"
+
+[features]
+console = []
